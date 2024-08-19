@@ -1,0 +1,10 @@
+def mostrar_menu():
+    print("Menú de Personalización de Pizza")
+    print("1. Cambiar tipo de masa")
+    print("2. Cambiar tipo de salsa")
+    print("3. Agregar ingrediente")
+    print("4. Eliminar ingrediente")
+    print("5. Mostrar pizza actual")
+    print("6. Estimar tiempo de preparación")
+    print("7. Confirmar pedido")
+    print("8. Salir")
