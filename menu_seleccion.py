@@ -1,4 +1,4 @@
-def mostrar_menu():
+def menu():
     print("Menú de Personalización de Pizza")
     print("1. Cambiar tipo de masa")
     print("2. Cambiar tipo de salsa")
