@@ -1,15 +1,13 @@
 # importar funciones
-import obtener_opc as opc
-import seleccionar_salsas as salsa
-import seleccionar_masas as masas
-import seleccionar_ingredientes as ingredientes
-import menu as menu
-
-menu()
+from obtener_opc import seleccionar_opcion
+from seleccionar_salsas import seleccionar_salsa as salsa
+from seleccionar_masas import seleccionar_masa as masas
+from seleccionar_ingredientes import seleccionar_ingrediente as ingredientes
+from menu_seleccion import menu
 
 
 # Definir opciones
-class Pizza:
+class armar_pizza:
     def __init__(self):
         self.masa = "Tradicional"
         self.salsa = "Tomate"
@@ -41,12 +39,12 @@ class Pizza:
 
 
 # respuesta a seleccion de opciones
-def main():
-    pizza = Pizza()
+def dar_respuesta():
+    pizza = armar_pizza()
 
     while True:
         menu()
-        opcion = opc()
+        opcion = seleccionar_opcion()
 
         if opcion == 1:
             pizza.cambiar_masa(masas())
@@ -77,4 +75,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    dar_respuesta()
