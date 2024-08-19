@@ -1,4 +1,4 @@
-def obtener_opcion():
+def seleccionar_opcion():
     while True:
         try:
             opcion = int(input("Seleccione una opción: "))
